@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha --require @babel/register server/tests --exit",
+    "build": "babel server -d dist",
     "dev": "nodemon --exec babel-node server/index.js"
   },
   "repository": {
@@ -19,6 +20,7 @@
   },
   "homepage": "https://github.com/willyserge/development-boiler-plate#readme",
   "devDependencies": {
+    "@babel/cli": "^7.8.4",
     "@babel/core": "^7.8.4",
     "@babel/node": "^7.8.4",
     "@babel/preset-env": "^7.8.4",
